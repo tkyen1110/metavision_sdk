@@ -246,6 +246,8 @@ def run(args):
         if ts % object_detector.get_accumulation_time() == 0:
             # call neural network to detect objects
             detections = object_detector.process(ts, frame_buffer)
+            # print(detections)
+            # print("= = = = = = = = = = = \n")
             # reset neural network input frame
             frame_buffer.fill(0)
             current_frame_start_ts = ts

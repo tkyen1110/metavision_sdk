@@ -82,7 +82,7 @@ def main():
                 print(f"There were {counter} events in this event buffer.")
                 print(f"There were {global_counter} total events up to now.")
                 print(f"The current event buffer included events from {min_t} to {max_t} microseconds.")
-                print("----- End of the event buffer! -----")
+                print("----- End of the event buffer! -----\n")
 
             if window.should_close():
                 break
